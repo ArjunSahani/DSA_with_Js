@@ -7,16 +7,27 @@
 </head>
         <script>
             let data = [9,28,23,5,66,10,162,468,36,281,6,32,98];
+
+            //Traversing with loop
+
             // for(let i=0;i<data.length;i++){
             //     document.write(`Array ${i} is ${data[i]} <br>`)
             // };
+
+            //Accessing elements
+
+            //let x=10;
+            //document.write(data[x])
+
+            //Accessing elements with input
             function getElement() 
             {
                 
                let el = document.getElementById('element').value
                
-               if(el<data.length){
-                alert(data[el])
+               if(el<data.length && typeof parseInt(el)=== "number")   //validation
+               {
+                alert(data[el] )  
                }else{
                 alert("please enter a valid input")
                }
